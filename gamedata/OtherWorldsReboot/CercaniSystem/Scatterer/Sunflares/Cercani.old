@@ -1,0 +1,76 @@
+Scatterer_sunflare
+{
+	Cercani
+	{
+		//path to sunflare textures
+		assetPath = OtherWorldsReboot/CercaniSystem/Scatterer/Sunflares/Cercani
+
+		
+		//Flare and spikes: Centered on the sun
+		//
+		//
+		//sunFlare.png
+		flareSettings = 0.65,1,0.9
+		
+		//sunSpikes.png
+		spikesSettings = 0.50,1,0.9
+		
+		
+		//distance under which the flare is faded out
+		//to make the sun surface visible up-close
+		//in scaled space coords, ie actual distance /6000
+		sunGlareFadeDistance = 300000
+
+		//distance over 0.5 of which the ghosts are progressively faded out
+		//full fadeout at  1.5 * ghostFadeDistance
+		//in scaled space coords, ie actual distance /6000
+		ghostFadeDistance = 167500000 //13500000 original or 1675000000
+		
+		// Ghosts, variable position along the sun to screen-center line
+		//
+		// each row is an instance of a ghost
+		// 8 instances of each ghost maximum
+		// if you want more ghosts or instances just contact me
+		// for each row: intensity, aspect ratio, 1/scale, position on sun-screenCenter line
+		
+		// position on sun-screenCenter line: can be positive or negative
+		// 0 is sun position, 1 is screen center
+		
+		//Ghost1.png
+		ghost1SettingsList1  
+		{
+			Item = 0.14,1,10,0.4
+			Item = 0.19,1,15,0.75
+			Item = 0.07,1,28,0.82
+			Item = 0.09,1,30,-0.2
+		}
+		
+		ghost1SettingsList2
+		{
+			Item = 0.15,1,19,1.4
+			Item = 0.20,1,14,1.9
+			Item = 0.06,1,35,2.2
+		}
+		
+		//Ghost2.png
+		ghost2SettingsList1
+		{
+			Item = 0.35,1,7,0.75
+			Item = 0.31,1,7,1.25
+			Item = 0.22,1,8,-0.15
+		}
+		ghost2SettingsList2
+		{
+		
+		}
+		
+		ghost3SettingsList1
+		{
+			Item = 0.08,1,15,1
+		}
+		ghost3SettingsList2
+		{
+		
+		}
+	}
+}

@@ -1,0 +1,6 @@
+src/bin
+src/lib
+src/OtherWorldsProgram/bin
+src/OtherWorldsProgram/obj
+src/Makefile
+ignore
