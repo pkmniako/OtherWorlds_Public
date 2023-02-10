@@ -1,4 +1,4 @@
-# Other Worlds
+![](https://i.imgur.com/pqhDLA8.png)
 
 **Other Worlds** is a story/planet pack combo that adds a **new star system** to Kerbal Space Program full of **custom-made planets**, as well as a **custom-made story**, first in KSP history.
 
