@@ -12,6 +12,10 @@ As optional mods, you can use *Enviromental Visual Enhancments*, *Scatterer* and
 
 You can also install [**Contract Configurator**](https://github.com/jrossignol/ContractConfigurator/releases) for a small collection of custom contracts.
 
+## Other Source code
+
+This mod also includes some laser sail parts that require custom code to work. You can find that one [here](https://github.com/pkmniako/Other_Worlds-Reboot).
+
 ## Changelog
 
 - **1.0.0**
