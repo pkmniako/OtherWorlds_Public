@@ -10,6 +10,8 @@ The mod also requires, but is already bunbled with, [VertexMitchellNetravaliHeig
 
 As optional mods, you can use *Enviromental Visual Enhancments*, *Scatterer* and *Parallax* for a more visually striking collection of planets.
 
+You can also install [**Contract Configurator**](https://github.com/jrossignol/ContractConfigurator/releases) for a small collection of custom contracts.
+
 ## Changelog
 
 - **1.0.0**
