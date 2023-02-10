@@ -2,6 +2,8 @@
 
 **Other Worlds** is a story/planet pack combo that adds a **new star system** to Kerbal Space Program full of **custom-made planets**, as well as a **custom-made story**, first in KSP history.
 
+You can watch the [**trailer here**](https://www.youtube.com/watch?v=2L4yKnbbOfs)
+
 ## Requirements and Optional Mods
 
 To play with this mod, you require to also install [**Kopernicus**](https://github.com/Kopernicus/Kopernicus/releases)
