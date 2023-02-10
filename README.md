@@ -2,6 +2,14 @@
 
 **Other Worlds** is a story/planet pack combo that adds a **new star system** to Kerbal Space Program full of **custom-made planets**, as well as a **custom-made story**, first in KSP history.
 
+## Requirements and Optional Mods
+
+To play with this mod, you require to also install [**Kopernicus**](https://github.com/Kopernicus/Kopernicus/releases)
+
+The mod also requires, but is already bunbled with, [VertexMitchellNetravaliHeightMap](https://github.com/pkmniako/Kopernicus_VertexMitchellNetravaliHeightMap) and [CTTP](https://github.com/Galileo88/Community-Terrain-Texture-Pack).
+
+As optional mods, you can use *Enviromental Visual Enhancments*, *Scatterer* and *Parallax* for a more visually striking collection of planets.
+
 ## Changelog
 
 - **1.0.0**
