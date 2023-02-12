@@ -53,5 +53,8 @@
     <Reference Include="UnityEngine.UIModule">
       <HintPath>D:\Users\Niako\SteamLibrary\steamapps\common\Kerbal Space Program - 1.12\KSP_x64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Input">
+      <HintPath>D:\Users\Niako\SteamLibrary\steamapps\common\Kerbal Space Program - 1.12\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using KSP.UI.Screens.Mapview;
+using KSP.UI.Screens.DebugToolbar;
+using KSP.UI.Screens.DebugToolbar.Screens.Cheats;
 
 using TMPro;
 
@@ -45,10 +48,54 @@ namespace NiakoKerbalMods
 							}
 
 					FirstStart = false;
+
+					DontDestroyOnLoad(this);
+
 					Debug.Log("[Other Worlds] Planet Manager started");
 				} else {
 					//Debug.Log("[Other Worlds] Planet Manager already started");
 				}
+			}
+
+			public static DebugScreenSpawner _dss = null;
+			public static GameObject _debugui = null;
+			public static AddDebugScreens _ads = null;
+
+			public void Update() {
+				ManageDebugMenu();
+			}
+
+			private void ManageDebugMenu() {
+				if(DebugScreenSpawner.Instance == null) return;
+
+				_debugui = DebugScreenSpawner.Instance.transform.GetChild(0).gameObject;
+
+				//Check for debug screen to appear
+				if(!_debugui.activeInHierarchy && _dss != null) {
+					_dss = null;
+				}
+				if(_debugui.activeInHierarchy && _dss == null) {
+					_dss = DebugScreenSpawner.Instance;
+					_ads = _debugui.GetComponent<AddDebugScreens>();
+					foreach(var screen in _ads.screens) {
+						if(screen.name.Equals("Set Orbit")) {
+							SetOrbit _setorbit = screen.screen.GetComponent<SetOrbit>();
+							_setorbit.bodyForwardButton.gameObject.AddOrGetComponent<OWP_PlanetManager_DebugButton>();
+							_setorbit.bodyBackButton.gameObject.AddOrGetComponent<OWP_PlanetManager_DebugButton>();
+						}
+						if(screen.name.Equals("Set Position")) {
+							SetPosition _setposition = screen.screen.GetComponent<SetPosition>();
+							var b1 = _setposition.bodyForwardButton.gameObject.AddOrGetComponent<OWP_PlanetManager_DebugButton>();
+							var b2 = _setposition.bodyBackButton.gameObject.AddOrGetComponent<OWP_PlanetManager_DebugButton>();
+							b1.isSetOrbit = false;
+							b2.isSetOrbit = false;
+						}
+					}
+				}
+			}
+
+			public void _Test() {
+				Debug.Log("[Other Worlds] [DEBUG] Forwards");
 			}
 
 			public void UpdateMap() {
@@ -118,6 +165,50 @@ namespace NiakoKerbalMods
 					return planets_rescale;
 				} else {
 					return 1.0; //I don't trust KSP
+				}
+			}
+
+			public class OWP_PlanetManager_DebugButton : MonoBehaviour {
+				Button button;
+				public bool isSetOrbit = true;
+
+				void Start() {
+					button = gameObject.GetComponent<Button>();
+
+					//var clr = button.colors;
+					//clr.normalColor = new Color(1, 0.8f, 0.48f, 1);
+					//button.colors = clr;
+
+					button.onClick.AddListener(delegate{ OnButtonClick(); });
+				}
+
+				void OnButtonClick() {
+					//Debug.Log($"[Other Worlds] [DEBUG] {OWP_Util.GetObjectHirearchy(this.transform.parent.parent.parent.parent.gameObject)}");
+
+					if(ProgressShowPlanets()) {
+						Debug.LogWarning("[Other Worlds] [Planet Manager] No need to do anything with the buttons");
+						return;
+					}
+
+					CelestialBody selected = null;
+
+					if(isSetOrbit) {
+						selected = transform.parent.parent.GetComponent<SetOrbit>().SelectedBody;
+					} else {
+						selected = transform.parent.parent.GetComponent<SetPosition>().SelectedBody;
+					}
+
+					if(selected == null) {
+						Debug.LogWarning("[Other Worlds] [Planet Manager] OnButtonClick can't find the selected planet");
+						return;
+					}
+					
+					if(PLANETS.Contains(selected)) {
+						Debug.LogWarning($"[Other Worlds] [Planet Manager] Planet '{selected.name}' on ban list");
+						button.onClick.Invoke();
+					} else {
+						Debug.LogWarning($"[Other Worlds] [Planet Manager] Planet '{selected.name}' NOT on ban list");
+					}
 				}
 			}
 		}

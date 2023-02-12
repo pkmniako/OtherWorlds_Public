@@ -248,10 +248,8 @@ namespace NiakoKerbalMods
 			public void Update() {
 				if(ui == null || !ui.activeInHierarchy) return;
 
-				if(FlightGlobals.ActiveVessel != null)
-					debugText.text = "Distance to Trigger: " + OWP_Ending.DistanceToTrigger(FlightGlobals.ActiveVessel.gameObject.transform);
-				else
-					debugText.text = "Active Vessel is null... somehow...";
+				debugText.text = $"DSS Instance?: {KSP.UI.Screens.DebugToolbar.DebugScreenSpawner.Instance != null}\nCheck: {(OWP_PlanetManager._dss == null && OWP_PlanetManager._debugui.activeInHierarchy)}";
+				debugText.text += $"\n_debugui?: {(OWP_PlanetManager._debugui != null ? (OWP_PlanetManager._debugui.activeInHierarchy ? "Active" : "Non Active") : "Null")}";
 
 				if(timer > 0) timer -= Time.deltaTime;
 
@@ -279,8 +277,9 @@ namespace NiakoKerbalMods
 			}
 
 			public void ButtonDebug() {
-				//Debug.LogWarning(OWP_Util.GetObjectHirearchy());
-				OWP_Cutscene.DEBUG_CUTSCENE = !OWP_Cutscene.DEBUG_CUTSCENE;
+				Debug.LogWarning("[Other Worlds] [Debug] " + OWP_Util.GetObjectHirearchy(KSP.UI.Screens.DebugToolbar.DebugScreenSpawner.Instance.gameObject));
+				//OWP_Cutscene.DEBUG_CUTSCENE = !OWP_Cutscene.DEBUG_CUTSCENE;
+				//Debug.Log($"[Other WOrlds] [Debug] Current selected planet in cheat menu: {OWP_PlanetManager._setorbit.SelectedBody.name}\n\tIs the object even active? {OWP_PlanetManager._setorbit.gameObject.activeInHierarchy}");
 			}
 
 			int nextSignalToUpdate = 0;

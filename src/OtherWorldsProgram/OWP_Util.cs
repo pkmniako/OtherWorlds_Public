@@ -44,11 +44,15 @@ namespace NiakoKerbalMods
 					return output;
 				}
 
-				output = p + "- '" + main.name + "':\n";
+				output = p + "- '" + main.name + "'";
+				if(!main.activeSelf) output += " (Self Off)";
+				if(!main.activeInHierarchy) output += " (Parent Off)";
+				output += ":\n";
 				foreach(Behaviour mb in main.GetComponents<Behaviour>()) {
 					output += p + "\t<" + mb.GetType().Name + ">\n";
 				}
-				foreach(Transform child in main.transform) {
+				for(int i = 0; i < main.transform.childCount; i++) {
+					Transform child = main.transform.GetChild(i);
 					output += GetObjectHirearchy(child.gameObject, p + "\t");
 				}
 				return output;
