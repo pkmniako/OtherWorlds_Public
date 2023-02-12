@@ -1,6 +1,8 @@
-# Other Worlds
+![](https://i.imgur.com/pqhDLA8.png)
 
 **Other Worlds** is a story/planet pack combo that adds a **new star system** to Kerbal Space Program full of **custom-made planets**, as well as a **custom-made story**, first in KSP history.
+
+You can watch the [**trailer here**](https://www.youtube.com/watch?v=2L4yKnbbOfs)
 
 ## Requirements and Optional Mods
 
@@ -9,6 +11,12 @@ To play with this mod, you require to also install [**Kopernicus**](https://gith
 The mod also requires, but is already bunbled with, [VertexMitchellNetravaliHeightMap](https://github.com/pkmniako/Kopernicus_VertexMitchellNetravaliHeightMap) and [CTTP](https://github.com/Galileo88/Community-Terrain-Texture-Pack).
 
 As optional mods, you can use *Enviromental Visual Enhancments*, *Scatterer* and *Parallax* for a more visually striking collection of planets.
+
+You can also install [**Contract Configurator**](https://github.com/jrossignol/ContractConfigurator/releases) for a small collection of custom contracts.
+
+## Other Source code
+
+This mod also includes some laser sail parts that require custom code to work. You can find that one [here](https://github.com/pkmniako/Other_Worlds-Reboot).
 
 ## Changelog
 
