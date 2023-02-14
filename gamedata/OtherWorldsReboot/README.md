@@ -12,6 +12,13 @@ As optional mods, you can use *Enviromental Visual Enhancments*, *Scatterer* and
 
 ## Changelog
 
+- **1.0.2**
+	- Story Mode
+		- Added a pop-out window on new saves to indicate what to do to start the story
+		- Added other pop-outs
+		- Rephrased a clue due to imprecision
+	- Fixes
+		- Lower the terrain quality of C4-2 to avoid some clipping.
 - **1.0.1**
 	- Fixes
 		- Made parallax configuration for C2-1 less laggy

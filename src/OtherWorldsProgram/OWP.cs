@@ -28,6 +28,8 @@ namespace NiakoKerbalMods
 
 			public static bool artifact1Spawned = false;
 			public static bool artifact2Spawned = false;
+			public static bool popout1shown = false, popout1shownNow = false;
+			public static bool popout2shown = false, popout2shownNow = false;
 
 			/*
 				Object-tracking data
@@ -217,7 +219,8 @@ namespace NiakoKerbalMods
 
 			private void _OnNewSaveFile() {
 				Debug.Log("[Other Worlds] Running new savefile routine...");
-				OWP_PlanetManager.SpawnCustomWaypoints();	
+				OWP_PlanetManager.SpawnCustomWaypoints();
+				OWP_Popout.OnFirstKSC();
 			}
 
 			/*
@@ -229,6 +232,8 @@ namespace NiakoKerbalMods
 				node.AddValue("owProgress", progress);
 				node.AddValue("a1s", artifact1Spawned);
 				node.AddValue("a2s", artifact2Spawned);
+				node.AddValue("popout1shown", popout1shown);
+				node.AddValue("popout2shown", popout2shown);
 				node.AddValue("newSaveChecksDone", !runNewSavefileRoutine);
 			}
 
@@ -244,6 +249,11 @@ namespace NiakoKerbalMods
 						artifact1Spawned = Boolean.Parse(node.GetValue("a1s"));
 					if(node.HasValue("a2s"))
 						artifact2Spawned = Boolean.Parse(node.GetValue("a2s"));
+
+					if(node.HasValue("popout1shown"))
+						popout1shown = Boolean.Parse(node.GetValue("popout1shown"));
+					if(node.HasValue("popout2shown"))
+						popout2shown = Boolean.Parse(node.GetValue("popout2shown"));
 
 					if(node.HasValue("newSaveChecksDone"))
 						runNewSavefileRoutine = !Boolean.Parse(node.GetValue("newSaveChecksDone"));

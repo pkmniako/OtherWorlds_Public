@@ -1,1 +1,2 @@
 ISLAND_CLR.dds and ISLAND_NRM.dds from https://polyhaven.com/a/rocks_ground_06, licensed under CC0
+Bundled fonts obtained from Google Fonts

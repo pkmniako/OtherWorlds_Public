@@ -70,6 +70,7 @@ namespace NiakoKerbalMods
 				//Debug.Log("[Other Worlds] OnGameSceneSwitchRequested()");
 				OWP_Ending.StopCutscene();
 				OWP_Music.StopMusic();
+				OWP_Popout.OnSceneChange();
 			}
 			private void OnSceneConfirmExit(GameScenes scenes) {
 				OWP_LocPillar.ResetCircling();
@@ -93,6 +94,7 @@ namespace NiakoKerbalMods
 			private void OnEditorShowPartList() {
 				OnSceneConfirmExit(GameScenes.FLIGHT);
 				OWP.SetPartVisibilityOnEditor();
+				OWP_Popout.OnEnterEditor();
 			}
 
 			private void OnFlightReady() {
