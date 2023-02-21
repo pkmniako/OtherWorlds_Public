@@ -22,6 +22,7 @@ namespace NiakoKerbalMods
 			public static OWP_Cutscene cut = null;
 
 			private static List<Renderer> invisibleMeshes;
+			private static List<Light> invisibleLights;
 			private static ScreenShot screenshotModule;
 
 			private static GameObject cutsceneCenter;
@@ -185,6 +186,7 @@ namespace NiakoKerbalMods
 				if(!vesselsVisible) return;
 				vesselsVisible = false;
 				invisibleMeshes = new List<Renderer>();
+				invisibleLights = new List<Light>();
 
 				foreach(Vessel vessel in FlightGlobals.fetch.vesselsLoaded) {
 					//It's a EVA Kerbal
@@ -198,6 +200,13 @@ namespace NiakoKerbalMods
 								r.enabled = false;
 							}
 						}
+						Light[] ls = part.GetComponentsInChildren<Light>(true);
+						foreach(Light l in ls) {
+							if(l.enabled) {
+								invisibleLights.Add(l);
+								l.enabled = false;
+							}
+						}
 					//It's a normal vessel
 					} else {
 						foreach(Part part in vessel.Parts) {
@@ -206,6 +215,13 @@ namespace NiakoKerbalMods
 								if(r.enabled) {
 									invisibleMeshes.Add(r);
 									r.enabled = false;
+								}
+							}
+							Light[] ls = part.GetComponentsInChildren<Light>(true);
+							foreach(Light l in ls) {
+								if(l.enabled) {
+									invisibleLights.Add(l);
+									l.enabled = false;
 								}
 							}
 						}
@@ -223,11 +239,17 @@ namespace NiakoKerbalMods
 					if(r.enabled) Debug.LogWarning("[Other Worlds] [MakeVesselsInvisible] Renderer of object " + r.gameObject.name + " was supposed to be invisible, but it wasn't!");
 					r.enabled = true;
 				}
+				foreach(Light l in invisibleLights) {
+					if(l.enabled) Debug.LogWarning("[Other Worlds] [MakeVesselsInvisible] Light of object " + l.gameObject.name + " was supposed to be invisible, but it wasn't!");
+					l.enabled = true;
+				}
 
 				Debug.Log("[Other Worlds] Made Vessels visible");
 
 				invisibleMeshes.Clear();
 				invisibleMeshes = null;
+				invisibleLights.Clear();
+				invisibleLights = null;
 			}
 
 			public static void UserInputDisable() {

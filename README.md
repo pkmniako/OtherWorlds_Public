@@ -20,6 +20,12 @@ This mod also includes some laser sail parts that require custom code to work. Y
 
 ## Changelog
 
+- **1.0.3**
+	- Story Mode
+		- One signal's range made bigger
+		- Made a clue slightly better
+	- Fixes
+		- Fixed lights from vessels showing up when reading signals
 - **1.0.2**
 	- Story Mode
 		- Added a pop-out window on new saves to indicate what to do to start the story

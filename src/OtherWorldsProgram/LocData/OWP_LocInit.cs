@@ -53,7 +53,7 @@ namespace NiakoKerbalMods
 								new Vector3(-2, -1.88f * 2, -8), new Vector3(0, 0, 0), //Camera
 								OWP_Util.CT2UT(0, 9) + 1.5634 * 3600
 							), false), 1);
-				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_3", 4000, 3,
+				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_3", 7000, 3,
 							new OWP_Cutscene(
 								14,
 								new Vector3(0, 0, 0), new Vector3(0, 0, 0), //Char
