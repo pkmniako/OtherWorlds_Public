@@ -20,6 +20,12 @@ This mod also includes some laser sail parts that require custom code to work. Y
 
 ## Changelog
 
+- **1.0.4**
+	- Celestial Bodies
+		- Started testing EVE Raymarched clouds in Vassa if that version of EVE is installed.
+	- Fixes
+		- Module Manager applying clouds to every single EVE_CLOUDS node, ending up duplicating clouds, has been fixed.
+		- Added template to Ice Giant to add missing settings which lack were breaking the RnD science archive screen.
 - **1.0.3**
 	- Story Mode
 		- One signal's range made bigger
