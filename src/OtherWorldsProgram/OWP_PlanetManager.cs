@@ -25,7 +25,7 @@ namespace NiakoKerbalMods
 				get { return (PLANETS != null && PLANETS.Count > 2) ? PLANETS[1] : null; }
 			}
 
-			private static string[] PLANETS_NAMES = {"OWR1", "OWR2"};
+			private static string[] PLANETS_NAMES = {"Owr1", "Owr2"};
 
 			private static bool FirstStart = true;
 
