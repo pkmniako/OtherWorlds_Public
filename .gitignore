@@ -4,3 +4,5 @@ src/OtherWorldsProgram/bin
 src/OtherWorldsProgram/obj
 src/Makefile
 ignore
+.vscode
+builds
