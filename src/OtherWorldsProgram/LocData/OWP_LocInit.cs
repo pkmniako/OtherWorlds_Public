@@ -53,14 +53,14 @@ namespace NiakoKerbalMods
 								new Vector3(-2, -1.88f * 2, -8), new Vector3(0, 0, 0), //Camera
 								OWP_Util.CT2UT(0, 9) + 1.5634 * 3600
 							), false), 1);
-				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_3", 7000, 3,
+				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_3", 15000, 3, //Originally 7km range
 							new OWP_Cutscene(
 								14,
 								new Vector3(0, 0, 0), new Vector3(0, 0, 0), //Char
 								new Vector3(0, 0, 0), new Vector3(0, 0, 0), //Camera
 								OWP_Util.CT2UT(2, 91) + 31.54 * 60
 							), false), 14);
-				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_4", 15000, 6,
+				OWP.AddLocation(new OWP_LocSignal("Vassa", "Signal_Vassa_4", 25000, 6,
 							new OWP_Cutscene(
 								15,
 								new Vector3(0, 0, 0), new Vector3(0, 0, 0), //Char
@@ -124,7 +124,7 @@ namespace NiakoKerbalMods
 								new Vector3(-1.28f, 1.105f, 0.42f), new Vector3(0, 0, 0), //Camera
 								(OWP_Util.CT2UT(2, 72) + 107760 * 222/360.0 + 1800)
 							), true, playsSong: false), 12);
-				OWP.AddLocation(new OWP_LocSignal("Disole", "Signal_Disole_3", 120000, 4,
+				OWP.AddLocation(new OWP_LocSignal("Disole", "Signal_Disole_3", 1920000, 4, //x16 times its original size
 							new OWP_Cutscene(
 								18,
 								new Vector3(0, -0.47f, 0), new Vector3(0, 0, 0), //Char

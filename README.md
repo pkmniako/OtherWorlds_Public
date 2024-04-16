@@ -21,6 +21,8 @@ This mod also includes some laser sail parts that require custom code to work. Y
 ## Changelog
 
 - **1.0.5**
+	- Story mode
+		- Some signals' ranges made bigger
 	- Fixes	
 		- Applied new kopernicus settings for OnDemand loading and handling of far away colliders
 		- Fixed generated waypoints with the custom UI missing a space
