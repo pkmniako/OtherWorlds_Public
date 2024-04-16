@@ -504,7 +504,7 @@ namespace NiakoKerbalMods
 				ScenarioCustomWaypoints.AddWaypoint(wp);
 				*/
 				OWP_Util.NewWaypoint(
-					$"Unknown Signal {currentSignal.signal.id}\nSignal Strength: {currentSignal.signalStrengthText}"
+					$"Unknown Signal {currentSignal.signal.id} (Signal Strength: {currentSignal.signalStrengthText})"
 					, active.mainBody.GetName()
 					, active.longitude
 					, active.latitude
