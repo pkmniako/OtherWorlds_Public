@@ -170,8 +170,8 @@ This mod also includes some laser sail parts that require custom code to work. Y
 ## Licensing
 
 The [license](License.txt) for this mod comes in two parts:
-- C# Code (That found on the src folder on github) is licensed under MIT
-- Character dialogue and everything else falls under ARR
+- C# Code (That found on the src folder on github) is licensed under **MIT**
+- Character dialogue and everything else falls under **ARR**
 - Check [the credits](#Credits) for any additional assets used that may be distributed under a different license
 
 ## Credits
@@ -179,6 +179,9 @@ The [license](License.txt) for this mod comes in two parts:
 	- [Beale](https://forum.kerbalspaceprogram.com/profile/70533-beale/): Texture detail for a specific model
 	- [DibzNr](https://forum.kerbalspaceprogram.com/profile/212219-dibznr/): Most of the science experiment descriptions
 	- [JadeOfMaar](https://forum.kerbalspaceprogram.com/profile/167617-jadeofmaar/): Modded resource files
+- Redistributed dependencies
+	- [CTTP](https://github.com/Galileo88/Community-Terrain-Texture-Pack) under **Attribution-NonCommercial-ShareAlike 4.0 International**
+	- [Kopernicus_VertexMitchellNetravaliHeightMap](https://github.com/pkmniako/Kopernicus_VertexMitchellNetravaliHeightMap) under **MIT**
 - Local height terrain data:
 	- [Mapzen](https://www.mapzen.com/) Terrain Tiles
 	- NASA's [LOLA](https://science.nasa.gov/mission/lro/lola/) height data
