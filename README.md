@@ -20,6 +20,12 @@ This mod also includes some laser sail parts that require custom code to work. Y
 
 ## Changelog
 
+- **1.0.5**
+	- Fixes	
+		- Applied new kopernicus settings for OnDemand loading and handling of far away colliders
+		- Fixed generated waypoints with the custom UI missing a space
+		- Rise range of sprite core antenna to reach the star (Between 2017 and now something happened)
+		- Fixed Vassa not having clouds when using newer version of the Volumetric Clouds mod
 - **1.0.4**
 	- Celestial Bodies
 		- Started testing EVE Raymarched clouds in Vassa if that version of EVE is installed.
@@ -162,3 +168,20 @@ This mod also includes some laser sail parts that require custom code to work. Y
 	- Added C2-1
 
 ## Licensing
+
+The [license](License.txt) for this mod comes in two parts:
+- C# Code (That found on the src folder on github) is licensed under MIT
+- Character dialogue and everything else falls under ARR
+- Check [the credits](#Credits) for any additional assets used that may be distributed under a different license
+
+## Credits
+- Those who worked directly in the mod:
+	- [Beale](https://forum.kerbalspaceprogram.com/profile/70533-beale/): Texture detail for a specific model
+	- [DibzNr](https://forum.kerbalspaceprogram.com/profile/212219-dibznr/): Most of the science experiment descriptions
+	- [JadeOfMaar](https://forum.kerbalspaceprogram.com/profile/167617-jadeofmaar/): Modded resource files
+- Local height terrain data:
+	- [Mapzen](https://www.mapzen.com/) Terrain Tiles
+	- NASA's [LOLA](https://science.nasa.gov/mission/lro/lola/) height data
+- [One terrain texture and its normal](gamedata/OtherWorldsReboot/Bundles/ISLAND_CLR.png) by [Rob Tuytel](https://polyhaven.com/a/rocks_ground_06), redistributed under **CC0**
+- Bunbled font [Nunito](https://fonts.google.com/specimen/Nunito/about) redistributed under [Open Font License](https://openfontlicense.org/)
+- Most ring textures use highly modified ring textures from [SpaceEngine](https://spaceengine.org/)

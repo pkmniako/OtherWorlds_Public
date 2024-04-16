@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: KSPAssembly("Other Worlds Program", 1, 0, 4)]
+[assembly: KSPAssembly("Other Worlds Program", 1, 0, 5)]
 
 [assembly: AssemblyTitle("Other Worlds Program - Addon for Other Worlds Reboot")]
 [assembly: AssemblyDescription("Addon to control hand-made elements of the Other Worlds mod")]
