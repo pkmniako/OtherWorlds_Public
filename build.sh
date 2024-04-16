@@ -16,6 +16,10 @@ done < "$ASSEMBLY_INFO_PATH"
 
 echo "Version found: $V0.$V1.$V2"
 
+# Copy important files
+cp -f README.md gamedata/OtherWorldsReboot/README.md
+cp -f License.txt gamedata/OtherWorldsReboot/License.txt
+
 # Zip
 echo "Creating zip file, please wait..."
 mkdir -p builds
@@ -23,4 +27,4 @@ cd gamedata
 zip -r ../builds/Other_Worlds_$V0.$V1.$V2.zip *
 
 # Done
-echo "Done!"
+echo "Done building version $V0.$V1.$V2!"

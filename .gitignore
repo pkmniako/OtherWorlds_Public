@@ -6,3 +6,5 @@ src/Makefile
 ignore
 .vscode
 builds
+gamedata/OtherWorldsReboot/License.txt
+gamedata/OtherWorldsReboot/README.md
