@@ -32,8 +32,8 @@ zip -r "$PATH_ZIP" *
 # Zip dependencies
 PATH_TO_GAMEDATA="/e/SteamLibrary/Kerbal Space Program - 1.12 - Planets/GameData"
 cd "$PATH_TO_GAMEDATA"
-zip -r $PATH_ZIP CTTP
-zip -r $PATH_ZIP 000_NiakoUtils
+zip -r "$PATH_ZIP" CTTP
+zip -r "$PATH_ZIP" 000_NiakoUtils
 
 # Done
 cd "$PATH_ORIGINAL"
