@@ -20,6 +20,9 @@ This mod also includes some laser sail parts that require custom code to work. Y
 
 ## Changelog
 
+- **1.0.6**:
+	- Fixes
+		- Removed old, now broken config for multi-star solar panels
 - **1.0.5**
 	- Story mode
 		- Some signals' ranges made bigger
