@@ -1,0 +1,688 @@
+//
+// Parallax Configuration Files. Uses Stock Parallax Textures
+//
+
+//Subdivision PQSs
+@Kopernicus:NEEDS[ParallaxContinued&Parallax_StockTerrainTextures]:AFTER[OtherWorldsReboot]
+{
+	@Body[Troni] //Based on Ike
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Vassa] //Based on Laythe
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[C2-1] //Based on Gilly
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 2
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Pequar] //Based on Eve
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[C3-1] //Based on Gilly
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Disole] //Based on Vall
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Kevari] //Based on Mun
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Crons] //Based on Duna
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Niko] //Based on Ike (Literally same size)
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[C4-1] //Based on Gilly
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[C4-2] //Based on Gilly
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Prima] //Based on Moho
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+	@Body[Secunda] //Based on Moho
+	{
+		%PQS
+		{
+			%Mods
+			{
+				Parallax
+				{
+					subdivisionLevel = 1
+					subdivisionRadius = 4
+					order = 999999
+				}
+			}
+		}
+	}
+}
+
+ParallaxTerrain:NEEDS[ParallaxContinued&Parallax_StockTerrainTextures]
+{
+	Body
+	{
+		name = Troni
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Moho/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Moho/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Moho/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Moho/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Moho/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Moho/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Moho/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Moho/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Moho/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 12
+			_SteepContrast = 2.2
+			_SteepMidpoint = 0.62
+			_DisplacementScale = 0.15
+			_DisplacementOffset = 0.03
+			_SpecularIntensity = 8
+			_SpecularPower = 10
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.43
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 5000
+			_LowMidBlendEnd = 5750
+			_MidHighBlendStart = 20000
+			_MidHighBlendEnd = 20001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Vassa
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Eeloo/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 5
+			_SteepContrast = 4
+			_SteepMidpoint = 0.67
+			_DisplacementScale = 0.15
+			_DisplacementOffset = 0.03
+			_SpecularIntensity = 0.25
+			_SpecularPower = 30
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.8
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 0
+			_LowMidBlendEnd = 1
+			_MidHighBlendStart = 20000
+			_MidHighBlendEnd = 20001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Pequar
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Duna/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Duna/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Duna/PluginData/high00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Duna/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Duna/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Duna/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Duna/PluginData/high01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Duna/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Duna/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 20
+			_SteepContrast = 6
+			_SteepMidpoint = 0.637
+			_DisplacementScale = 0.03
+			_DisplacementOffset = 0.01
+			_SpecularIntensity = 0.08
+			_SpecularPower = 5
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 1.15
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 60
+			_LowMidBlendEnd = 100
+			_MidHighBlendStart = 25000
+			_MidHighBlendEnd = 25001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Disole
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Duna/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Duna/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Duna/PluginData/high00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Duna/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Duna/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Duna/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Duna/PluginData/high01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Duna/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Duna/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 15
+			_SteepContrast = 4
+			_SteepMidpoint = 0.6
+			_DisplacementScale = 0.05
+			_DisplacementOffset = 0
+			_SpecularIntensity = 5
+			_SpecularPower = 0.08
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.35
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 0
+			_LowMidBlendEnd = 1
+			_MidHighBlendStart = 2600
+			_MidHighBlendEnd = 2800
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = C2-1
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Gilly/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 0
+			_SteepContrast = 1
+			_SteepMidpoint = 0.5
+			_DisplacementScale = 0.04
+			_DisplacementOffset = 0
+			_SpecularIntensity = 4
+			_SpecularPower = 30
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.3
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = -500
+			_LowMidBlendEnd = -499
+			_MidHighBlendStart = -498
+			_MidHighBlendEnd = -497
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = C3-1
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Gilly/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 0
+			_SteepContrast = 1
+			_SteepMidpoint = 0.5
+			_DisplacementScale = 0.04
+			_DisplacementOffset = 0
+			_SpecularIntensity = 2
+			_SpecularPower = 15
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.3
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = -500
+			_LowMidBlendEnd = -499
+			_MidHighBlendStart = -498
+			_MidHighBlendEnd = -497
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Kevari
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Vall/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Vall/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Vall/PluginData/high00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Vall/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Vall/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Vall/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Vall/PluginData/high01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Vall/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Vall/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 6
+			_SteepContrast = 4
+			_SteepMidpoint = 0.731
+			_DisplacementScale = 0.05
+			_DisplacementOffset = 0
+			_SpecularIntensity = 1
+			_SpecularPower = 0.08
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.6
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = -10000
+			_LowMidBlendEnd = -10001
+			_MidHighBlendStart = 90002
+			_MidHighBlendEnd = 90003
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Crons
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Eeloo/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 9
+			_SteepContrast = 4.5
+			_SteepMidpoint = 0.731
+			_DisplacementScale = 0.15
+			_DisplacementOffset = 0
+			_SpecularIntensity = 2
+			_SpecularPower = 10
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.56
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 0
+			_LowMidBlendEnd = 1
+			_MidHighBlendStart = 60000
+			_MidHighBlendEnd = 60001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Niko
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Mun/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Mun/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Mun/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Mun/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Mun/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Mun/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Mun/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Mun/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Mun/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 12
+			_SteepContrast = 2.2
+			_SteepMidpoint = 0.62
+			_DisplacementScale = 0.05
+			_DisplacementOffset = 0.01
+			_SpecularIntensity = 2
+			_SpecularPower = 15
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.43
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 5000
+			_LowMidBlendEnd = 5750
+			_MidHighBlendStart = 20000
+			_MidHighBlendEnd = 20001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = C4-1
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Gilly/PluginData/mid01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Gilly/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 0
+			_SteepContrast = 1
+			_SteepMidpoint = 0.5
+			_DisplacementScale = 0.04
+			_DisplacementOffset = 0
+			_SpecularIntensity = 4
+			_SpecularPower = 21
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.3
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = -500
+			_LowMidBlendEnd = -499
+			_MidHighBlendStart = -498
+			_MidHighBlendEnd = -497
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = C4-2
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Pol/PluginData/low00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Pol/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Pol/PluginData/high00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Pol/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Pol/PluginData/low01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Pol/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Pol/PluginData/high01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Pol/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Pol/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 0
+			_SteepContrast = 1
+			_SteepMidpoint = 0.5
+			_DisplacementScale = 0.04
+			_DisplacementOffset = 0
+			_SpecularIntensity = 4
+			_SpecularPower = 21
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.3
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = -500
+			_LowMidBlendEnd = -499
+			_MidHighBlendStart = -498
+			_MidHighBlendEnd = -497
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Prima
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Eeloo/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 12
+			_SteepContrast = 2.2
+			_SteepMidpoint = 0.62
+			_DisplacementScale = 0.15
+			_DisplacementOffset = 0.01
+			_SpecularIntensity = 3
+			_SpecularPower = 100
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.43
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 0
+			_LowMidBlendEnd = 1
+			_MidHighBlendStart = 20000
+			_MidHighBlendEnd = 20001
+			_Tiling = 0.06666667
+		}
+	}
+	Body
+	{
+		name = Secunda
+		emissive = False
+		ShaderProperties
+		{
+			_MainTexLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid00.dds
+			_MainTexSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep00.dds
+			_BumpMapLow = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapMid = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapHigh = Parallax_StockTerrainTextures/Eeloo/PluginData/mid01.dds
+			_BumpMapSteep = Parallax_StockTerrainTextures/Eeloo/PluginData/steep01.dds
+			_DisplacementMap = Parallax_StockTerrainTextures/Eeloo/PluginData/displacement.dds
+			_InfluenceMap = OtherWorldsReboot/influence.dds
+			_SteepPower = 3
+			_SteepContrast = 2.2
+			_SteepMidpoint = 0.62
+			_DisplacementScale = 0.15
+			_DisplacementOffset = 0.01
+			_SpecularIntensity = 2
+			_SpecularPower = 100
+			_EnvironmentMapFactor = 0.5
+			_Hapke = 0.43
+			_EmissionColor = 0,0,0,1
+			_FresnelColor = 0.1,0.1,0.1,1
+			_FresnelPower = 3
+			_BumpScale = 1
+			_RefractionIntensity = 0
+			_LowMidBlendStart = 0
+			_LowMidBlendEnd = 1
+			_MidHighBlendStart = 20000
+			_MidHighBlendEnd = 20001
+			_Tiling = 0.06666667
+		}
+	}
+}
