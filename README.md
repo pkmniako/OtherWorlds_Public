@@ -20,6 +20,13 @@ This mod also includes some laser sail parts that require custom code to work. Y
 
 ## Changelog
 
+- **1.0.8**:
+	- Fixed
+		- Disable by default any PQSCity collider to (try) avoid PhysX bug that would cause people to sink into planet's terrains
+		- Disable old parallax configs trying to be loaded with Parallax Continued
+		- Barely-tested Parallax Continued config (See `GameData/OtherWorldsReboot/CercaniSystem` and rename `ModConfig_ParallaxContinued.cfgdisable` to `ModConfig_ParallaxContinued.cfg`)
+			- Made by [Kerbas-ad-astra](https://github.com/Kerbas-ad-astra)
+			- Disabled by default
 - **1.0.7**
 	- Fixes
 		- Fixed comptability issues due to wrong usage of Module Manager alongside `Parallax` top node
@@ -187,6 +194,7 @@ The [license](License.txt) for this mod comes in two parts:
 	- [Beale](https://forum.kerbalspaceprogram.com/profile/70533-beale/): Texture detail for a specific model
 	- [DibzNr](https://forum.kerbalspaceprogram.com/profile/212219-dibznr/): Most of the science experiment descriptions
 	- [JadeOfMaar](https://forum.kerbalspaceprogram.com/profile/167617-jadeofmaar/): Modded resource files
+	- [Kerbas-ad-astra](https://github.com/Kerbas-ad-astra): Parallax continued config
 - Redistributed dependencies
 	- [CTTP](https://github.com/Galileo88/Community-Terrain-Texture-Pack) under **Attribution-NonCommercial-ShareAlike 4.0 International**
 	- [Kopernicus_VertexMitchellNetravaliHeightMap](https://github.com/pkmniako/Kopernicus_VertexMitchellNetravaliHeightMap) under **MIT**
